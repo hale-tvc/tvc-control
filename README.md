@@ -1,7 +1,6 @@
 PID Controller
 ==============
 ### Requirements
-
 1. Python 3
 2. requirments.txt file
 
@@ -42,6 +41,3 @@ Create Virtual Enviroment
 	deactivate
 
 	```
-
-
-
