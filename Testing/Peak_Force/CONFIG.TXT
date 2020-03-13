@@ -1,0 +1,47 @@
+# CONFIG.TXT
+#
+# Ultra Motion
+# Servo Cylinder
+# Firmware: MC620R1.4, v1.091
+# Serial#: 10116743
+#
+ifMode=0#0 = Human CLI Interface, 1 = Machine Mode 1, 2 = Machine Mode 2 (requires checksum) 
+baud=115200
+opMode=2#0 = CLI, 1 = Current Commands Position, 2 = Voltage Commands Position
+spMin=2048 #minimum extended position
+spMax=14411#maximum extended position
+kp=1200
+ki=250000
+kd=10000
+maxTorq=17500
+maxSpeed=2000000
+accel=5000
+vMin=33095 #~0V, (-10V ~ 2695)
+vMax=48274 #~10V, (5V ~ 48274)
+vFilter=10000 #decrease to increase filtering
+cMin=3064	#~4mA input
+cMax=63980	#~20mA input
+cFilter=10000 #decrease to increase filtering (min = 1, max = 65535)
+revSgnl=0 #set to 1 to invert analog input signal response
+xOutSrc=0 #4-20mA feedback source: 0 = Position, 1 = Torque, 2 = Vel, 3 = Bus Voltage, 4 = Temp, 5 = Humidity, 6 = CLI
+xOutMin=2048#Set = to spMin for full range position feedback
+xOutMax=14411#Set = to spMax for full range position feedback
+cOutMin=1064	#~4mA,	min 0
+cOutMax=61975	#~20mA,	max 65535
+revCout=0 #set to 1 to invert current feedback response
+DinMode=0
+errMode=5
+ovErrP=2048
+atTarg=63
+ovTorq=17498
+ovSpeed=5
+ovTemp=32765
+ovHumid=32765
+posGrtr=4095
+posLess=6144
+sFlag=0 # set to 1 to begin streaming at startup
+sTime=65535 #~3.5 Hz
+strX1=1 # Position, use the help command (HE 1) in CLI for a full list of streaming options
+strX2=0
+strX3=0
+
